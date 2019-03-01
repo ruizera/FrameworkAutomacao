@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>ConectorPostgreSQL.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">testeMySQL, ... (28/02/2019 22:54:59)</a> &gt; <a href="../../index.html" class="el_group">FrameworkAutomacao</a> &gt; <a href="../index.html" class="el_bundle">src/main/java</a> &gt; <a href="index.source.html" class="el_package">br.com.ruizera.conexaobanco</a> &gt; <span class="el_source">ConectorPostgreSQL.java</span></div><h1>ConectorPostgreSQL.java</h1><pre class="source lang-java linenums">package br.com.ruizera.conexaobanco;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class ConectorPostgreSQL extends ConectorBanco{
+
+
+
+	public ConectorPostgreSQL(String user, String pass, String db_url, String JDBC_Driver) {
+<span class="fc" id="L11">		super(user, pass, db_url, JDBC_Driver);</span>
+<span class="fc" id="L12">	}</span>
+
+	/*
+	 * public void state() throws SQLException {
+	 * 
+	 * stmt = conn.createStatement(); String sql; sql =
+	 * &quot;SELECT id, first, last, age FROM Employees&quot;; ResultSet rs =
+	 * stmt.executeQuery(sql);
+	 * 
+	 * int id = rs.getInt(&quot;id&quot;); int age = rs.getInt(&quot;age&quot;); String first =
+	 * rs.getString(&quot;first&quot;); String last = rs.getString(&quot;last&quot;);
+	 * 
+	 * System.out.print(&quot;ID: &quot; + id); System.out.print(&quot;, Age: &quot; + age);
+	 * System.out.print(&quot;, First: &quot; + first); System.out.println(&quot;, Last: &quot; + last);
+	 * rs.close(); }
+	 */
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span>testeMySQL, ... (28/02/2019 22:54:59)</div></body></html>

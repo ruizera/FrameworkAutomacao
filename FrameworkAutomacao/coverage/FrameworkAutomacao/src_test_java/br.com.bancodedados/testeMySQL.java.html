@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>testeMySQL.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">testeMySQL, ... (28/02/2019 22:54:59)</a> &gt; <a href="../../index.html" class="el_group">FrameworkAutomacao</a> &gt; <a href="../index.html" class="el_bundle">src/test/java</a> &gt; <a href="index.source.html" class="el_package">br.com.bancodedados</a> &gt; <span class="el_source">testeMySQL.java</span></div><h1>testeMySQL.java</h1><pre class="source lang-java linenums">package br.com.bancodedados;
+
+import static org.testng.Assert.assertNotNull;
+import static org.testng.Assert.assertTrue;
+
+import java.sql.SQLException;
+
+import org.testng.annotations.Test;
+
+import br.com.ruizera.conexaobanco.ConectorMySQL;
+
+<span class="fc" id="L12">public class testeMySQL {</span>
+	@Test
+	public void validarConexaoMySqlComSucesso() throws ClassNotFoundException, SQLException {
+<span class="fc" id="L15">		ConectorMySQL conectorMySql = new ConectorMySQL(&quot;root&quot;, &quot;1234&quot;,</span>
+<span class="fc" id="L16">				&quot;jdbc:mysql://127.0.0.1:3306&quot;, &quot;com.mysql.cj.jdbc.Driver&quot;);</span>
+<span class="fc" id="L17">		assertNotNull(conectorMySql.getConnection());</span>
+<span class="fc" id="L18">	}</span>
+
+	@Test
+	public void validarFecharConexaoMySqlComSucesso() throws ClassNotFoundException, SQLException {
+<span class="fc" id="L22">		ConectorMySQL conectorMySql = new ConectorMySQL(&quot;root&quot;, &quot;1234&quot;,</span>
+<span class="fc" id="L23">				&quot;jdbc:mysql://127.0.0.1:3306&quot;, &quot;com.mysql.cj.jdbc.Driver&quot;);</span>
+<span class="fc" id="L24">		conectorMySql.getConnection();</span>
+<span class="fc" id="L25">		conectorMySql.closeConnection();</span>
+<span class="fc" id="L26">		assertTrue(conectorMySql.getConnection().isClosed());</span>
+<span class="fc" id="L27">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span>testeMySQL, ... (28/02/2019 22:54:59)</div></body></html>

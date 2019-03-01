@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1112" started-at="2019-03-01T01:54:57Z" finished-at="2019-03-01T01:54:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1112" started-at="2019-03-01T01:54:57Z" finished-at="2019-03-01T01:54:58Z">
+      <class name="br.com.bancodedados.testeMySQL">
+        <test-method status="PASS" signature="validarConexaoMySqlComSucesso()[pri:0, instance:br.com.bancodedados.testeMySQL@3efedc6f]" name="validarConexaoMySqlComSucesso" duration-ms="796" started-at="2019-02-28T22:54:57Z" finished-at="2019-02-28T22:54:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validarConexaoMySqlComSucesso -->
+        <test-method status="PASS" signature="validarFecharConexaoMySqlComSucesso()[pri:0, instance:br.com.bancodedados.testeMySQL@3efedc6f]" name="validarFecharConexaoMySqlComSucesso" duration-ms="19" started-at="2019-02-28T22:54:58Z" finished-at="2019-02-28T22:54:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validarFecharConexaoMySqlComSucesso -->
+      </class> <!-- br.com.bancodedados.testeMySQL -->
+      <class name="br.com.bancodedados.testePostgreSQL">
+        <test-method status="PASS" signature="validarConexaoPostgreComSucesso()[pri:0, instance:br.com.bancodedados.testePostgreSQL@4c2fb9dd]" name="validarConexaoPostgreComSucesso" duration-ms="189" started-at="2019-02-28T22:54:58Z" finished-at="2019-02-28T22:54:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validarConexaoPostgreComSucesso -->
+        <test-method status="PASS" signature="validarFecharConexaoPostgreComSucesso()[pri:0, instance:br.com.bancodedados.testePostgreSQL@4c2fb9dd]" name="validarFecharConexaoPostgreComSucesso" duration-ms="58" started-at="2019-02-28T22:54:58Z" finished-at="2019-02-28T22:54:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validarFecharConexaoPostgreComSucesso -->
+      </class> <!-- br.com.bancodedados.testePostgreSQL -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
