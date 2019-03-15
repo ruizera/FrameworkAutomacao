@@ -25,7 +25,6 @@ public abstract class ConectorBanco {
 	public Connection getConnection() throws ClassNotFoundException, SQLException {
 		if (conn == null) {
 			Class.forName(JDBC_DRIVER);
-			System.out.println("Connecting to database...");
 			conn = DriverManager.getConnection(DB_URL, USER, PASS);
 		}
 		return conn;
